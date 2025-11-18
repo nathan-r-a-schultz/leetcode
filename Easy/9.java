@@ -3,6 +3,7 @@
 // math
 // completed jan 21, 2024
 
+// putting the package here just to remove errors
 package Easy;
 
 // I completed this one before moving to doing questions on VS Code so this is copy and pasted straight from leetcode
