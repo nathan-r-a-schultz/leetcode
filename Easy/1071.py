@@ -7,9 +7,8 @@ def gcdOfStrings(str1, str2):
 
     # selecting the shorter string to grab prefixes from
     workingStr = str2 if len(str2) < len(str1) else str1
-    returnStr = ""
 
-    for i in range(1, len(workingStr) + 1):
+    for i in range(len(workingStr), 0, -1):
 
         # grab a prefix from the shorter string
         tempStr = workingStr[0:i]
@@ -26,11 +25,9 @@ def gcdOfStrings(str1, str2):
             str2MultiplyFactor = int(str2MultiplyFactor)
 
         # construct new strings from the prefix and see if they match with str1 and str2
-        if tempStr * str1MultiplyFactor == str1 and tempStr * str2MultiplyFactor == str2: returnStr = tempStr
+        if tempStr * str1MultiplyFactor == str1 and tempStr * str2MultiplyFactor == str2: return tempStr
 
-    return returnStr
-
-def optimizedSolution():
+    return ""
 
 def main():
     str1 = "ABCABC"
