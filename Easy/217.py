@@ -3,6 +3,7 @@
 # array, hash table, sorting
 # may 3, 2026
 
+# my original solution
 def containsDuplicate(nums: list[int]) -> bool:
 
     # sorting to ensure that duplicate items remain next adjacent
@@ -15,6 +16,10 @@ def containsDuplicate(nums: list[int]) -> bool:
             return True
         
     return False
+
+# optimal solution i found online
+def containsDuplicateEfficient(nums: list[int]) -> bool:
+    return len(nums) != len(set(nums))
 
 def main():
 
